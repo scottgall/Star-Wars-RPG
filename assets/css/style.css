@@ -1,3 +1,82 @@
+html {
+    background-color: #383838;
+    color: lightgray;
+    font-family: 'Space Mono', monospace;
+}
 img {
-    height: 100px;
+    height: 105px;
+}
+div {
+    margin: 10px 0px;
+}
+h1 {
+    font-size: 25px;
+    margin: 10px 0px;
+}
+button {
+    margin: 0px 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    line-height: 13px;
+    border-radius: 5px;
+    border-color: #ffff66;
+    border-width: 1px;
+}
+#enemies {
+    height: 139px;
+}
+#defender {
+    height: 139px;
+}
+#attack {
+    background: gray;
+    color: #ffff66;
+    font-size: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.fight {
+    background: #FFFF66;
+    color: gray;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+}
+#title {
+    margin: 10px 0px 10px 0px;
+    font-size: 40px;
+    color: #FFFF66;
+}
+.container {
+    text-align: center;
+    min-width: 600px;
+    margin: 0px;
+}
+.defender {
+    background: gray;
+    color: #FFFF66;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 390px;
+}
+#defender-header {
+    margin-top: 0px;
+    padding-top: 3px;
+}
+#restartButton {
+    background: orange;
+    color: gray;
+    font-size: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+}
+#notification {
+    color: orange;
+    font-style: italic;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.char {
+    color: #383838;
+    background: lightgray;
 }

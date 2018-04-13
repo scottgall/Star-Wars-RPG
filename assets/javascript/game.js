@@ -15,7 +15,7 @@ $(document).ready(function(){
     var defenderAttack;
     var name = ["Jek Porkins", "Jar Jar Binks", "Max Rebo", "Nien Nunb"];
     var hp = [120, 100, 150, 180];
-    var attack = [1, 10, 11, 19];
+    var attack = [7, 10, 6, 13];
     var wins = 1;
     var gameWon = false;
     var gameLost = false;
@@ -28,7 +28,7 @@ $(document).ready(function(){
             // place clicked character in #yourchar div
             $(this).appendTo("#yourChar");
             // place all others in #emenies div
-            $(".char").not(this).appendTo("#enemies").css("background-color", "red").addClass("enemy");        
+            $(".char").not(this).appendTo("#enemies").css({"background-color": "#ff3c1a", "color": "lightgray", "border-color": "lightgray", "margin": "0px 5px"}).addClass("enemy");        
             // switch charChosen to true
             charChosen = true;
             // set charname for notification purpose
@@ -42,7 +42,7 @@ $(document).ready(function(){
             // display charHP
             charDisplay = $(this).children("a");
 
-            $("#notification").html("Choose an enemy to fight!");
+            $("#notification").html("<i class='swg swg-saberjedi'></i> Choose an enemy to fight <i class='swg swg-sabersith'></i>");
 
             
             console.log("your character - " + charName)
@@ -54,7 +54,7 @@ $(document).ready(function(){
             
             if (!enemyChosen && !gameLost) {
             // place clicked enemy in #defender div
-            $(this).appendTo("#defender").css({"background-color": "black", "color": "white"});
+            $(this).appendTo("#defender").css({"background-color": "#383838", "color": "lightgray", "border-color": "#ffff66"});
             // switch enemyChosen to true
             enemyChosen = true;
             // set defenter name for notification purposes
@@ -103,7 +103,7 @@ $(document).ready(function(){
               // check for loss  
             } else if (charHP < 0) {
                 // notification for loss
-                $("#notification").html("You've been defeated...GAME OVER!!!");
+                $("#notification").html("<i class='swg swg-stormtrooper'></i> The force is not with you...GAME OVER! <i class='swg swg-darthvader'></i>");
                 // disable attack button
                 enemyChosen = false;
                 gameLost = true;
@@ -121,7 +121,7 @@ $(document).ready(function(){
                 // check to see if all enemies defeated
                 if (wins === name.length) {
                     // win notification
-                    $("#notification").html("YOU WON!!!");
+                    $("#notification").html("<i class='swg swg-c3po'></i> YOU WON! <i class='swg swg-leia'></i>");
                     console.log("WIN")
                     gameWon = true;
                     // appear restart button
@@ -129,9 +129,10 @@ $(document).ready(function(){
                   // post-win, enemies still in play  
                 } else {
                     // win notification, enemies still in play
-                    $("#notification").html("You have defeated " + defenderName + ", you can choose to fight another enemy.") 
+                    $("#notification").html("You defeated " + defenderName + ",<br> choose another enemy to fight.") 
                 }
             }
+          // notification when you click attack at  
         } else if (!gameWon && charChosen && enemyChosen) {
             $("#notification").html("No enemy here!") 
         }

@@ -3,61 +3,45 @@
 <head> 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Star Wars RPG!</title>
+    <title>Star Wars RPG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/starwars-glyphicons/css/starwars-glyphicons.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
-
-    <div id="selectChar">
-        <button class="char" value="0">Jek Porkins<br><img src="assets/images/char1.jpeg"><br><a>120</a></button>
-        <button class="char" value="1">Jar Jar Binks<br><img src="assets/images/char2.jpg"><br><a>100</a></button>
-        <button class="char" value="2">Max Rebo<br><img src="assets/images/char3.jpg"><br><a>150</a></button>
-        <button class="char" value="3">Nien Nunb<br><img src="assets/images/char4.jpeg"><br><a>180</a></button>
-    </div>
+<div class="container">
+    <h1 id="title"><i class='swg swg-lightsabers'></i> Star Wars RPG <i class='swg swg-lightsabers'></i></h1>
+    
     <h1>YOUR CHARACTER</h1>
+    
+    <button class="char" value="0">Jek Porkins<br><img src="assets/images/char1.jpeg"><br><a>120</a></button>
+    <button class="char" value="1">Jar Jar Binks<br><img src="assets/images/char2.jpg"><br><a>100</a></button>
+    <button class="char" value="2">Max Rebo<br><img src="assets/images/char3.jpg"><br><a>150</a></button>
+    <button class="char" value="3">Nien Nunb<br><img src="assets/images/char4.jpeg"><br><a>180</a></button>
+    
     <div id="yourChar"></div>
+    
     <h1>ENEMIES AVAILABLE TO ATTACK</h1>
     <div id="enemies"></div>
-    <h1>Fight Section</h1>
-    <button id="attack">ATTACK</button>
-    <h1>DEFENDER</h1>
-    <div id="defender"></div>
-    <h2 id="notification">Choose your character!</h2>
-    <div id="restart"></div>
     
+    <div class="fight">
+    <h1 class="fight">Fight Section</h1>
+    <button id="attack">ATTACK</button>
+    </div>
+    
+    <div class="defender">
+        <h1 id="defender-header">DEFENDER</h1>
+        <div id="defender"></div>
+        <h2 id="notification"><i class='swg swg-reball'></i> Choose your character <i class='swg swg-reball'></i></h2>
+        <div id="restart"></div>
+    </div>
+</div>
+ 
     <script src="assets/javascript/game.js"></script>
 
 </body>
 </html>
-<!-- 
-    -all four chars show up in 'your char' section
-        each char has name, pic, hp
-    -when char clicked
-        3 other chars move to enemies section & get red background
-    -when enemy clicked
-        enemy moves to defender section & get black background
-    -when attack button clicked
-        your char's hp goes down & defender's hp goes down
-            'You attacked ___ for __ damage.'
-            '___ attacked you back for ___ damage'
-        defenders attack always same
-        your char attack increases by 8 each time
-    
-    LOSS
-    -if yourChar hp < 1
-        'You've been defeated...GAME OVER!!!'
-        restart button shows. must click to restart
-
-    WIN
-    -if defender hp < 1
-        defender dissapears
-        'You have defeated ____, you can choose to figth another enemy'
-        'if click "attack", says "No enemy here."'
-    -must click another enemy to continue
-
- -->
