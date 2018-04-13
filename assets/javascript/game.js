@@ -15,7 +15,7 @@ $(document).ready(function(){
     var defenderAttack;
     var name = ["Jek Porkins", "Jar Jar Binks", "Max Rebo", "Nien Nunb"];
     var hp = [120, 100, 150, 180];
-    var attack = [7, 10, 6, 13];
+    var attack = [7, 10, 4, 16];
     var wins = 1;
     var gameWon = false;
     var gameLost = false;
