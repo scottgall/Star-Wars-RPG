@@ -51,7 +51,6 @@ $(document).ready(function(){
         }
 
         $(".enemy").on('click', function () {
-            
             if (!enemyChosen && !gameLost) {
             // place clicked enemy in #defender div
             $(this).appendTo("#defender").css({"background-color": "#383838", "color": "lightgray", "border-color": "#ffff66"});
@@ -104,6 +103,7 @@ $(document).ready(function(){
             } else if (charHP < 0) {
                 // notification for loss
                 $("#notification").html("<i class='swg swg-stormtrooper'></i> The force is not with you...GAME OVER! <i class='swg swg-darthvader'></i>");
+                $("#defender").html("<img src='assets/images/loss.gif' style='height: 138px'>");
                 // disable attack button
                 enemyChosen = false;
                 gameLost = true;
@@ -122,6 +122,7 @@ $(document).ready(function(){
                 if (wins === name.length) {
                     // win notification
                     $("#notification").html("<i class='swg swg-c3po'></i> YOU WON! <i class='swg swg-leia'></i>");
+                    $("#defender").html("<img src='assets/images/win.gif' style='height: 138px'>");
                     console.log("WIN")
                     gameWon = true;
                     // appear restart button
