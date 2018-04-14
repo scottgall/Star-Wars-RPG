@@ -100,7 +100,7 @@ $(document).ready(function(){
                 // post-attack notification for fight still in-play
                 $("#notification").html("You attacked " + defenderName + " for " + charAttack + " damage.<br>"  +  defenderName + " attacked you back for " + defenderAttack + " damage.");
               // check for loss  
-            } else if (charHP < 0) {
+            } else if (charHP <= 0) {
                 // notification for loss
                 $("#notification").html("<i class='swg swg-stormtrooper'></i> The force is not with you...GAME OVER! <i class='swg swg-darthvader'></i>");
                 $("#defender").html("<img src='assets/images/loss.gif' style='height: 138px'>");
@@ -110,7 +110,7 @@ $(document).ready(function(){
                 // appear restart button
                 $("#restart").html("<button id='restartButton'>RESTART</button>");
               // check for win  
-            } else if (defenderHP < 0) {
+            } else if (defenderHP <= 0) {
                 // increment wins
                 wins++;
                 console.log("wins - " + (wins - 1))
