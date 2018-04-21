@@ -1,2 +1,2 @@
-# starWarsRPG.github.io
+# starWarsRPG
 game
