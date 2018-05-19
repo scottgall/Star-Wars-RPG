@@ -15,4 +15,4 @@ Single-player Star Wars themed RPG game.
 -JQuery
 
 ### Link
-https://scottgall.github.io/starWarsRPG/# starWarsRPG
+https://scottgall.github.io/starWarsRPG/
