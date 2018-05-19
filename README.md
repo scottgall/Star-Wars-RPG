@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Star Wars RPG
 Single-player Star Wars themed RPG game.
 
@@ -15,3 +16,7 @@ Single-player Star Wars themed RPG game.
 -JQuery
 
 ### Link
+=======
+# starWarsRPG
+game
+>>>>>>> 09aae9a24903e3c62eccafcdf260cdb3e90b0f2f
