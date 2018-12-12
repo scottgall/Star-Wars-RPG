@@ -1,4 +1,4 @@
-# Star Wars RPG
+# [Star Wars RPG](https://scottgall.github.io/Star-Wars-RPG/)
 Single-player Star Wars themed RPG game.
 
 ## Gameplay
@@ -10,9 +10,5 @@ Single-player Star Wars themed RPG game.
 * If enemy HP level drops to 0, the player can select a new enemy to battle.</br>
 * The player wins the game when they have defeated all enemies.</br>
 
-## Technologies Used
-* Javascript</br>
+## Technologies used
 * JQuery
-
-### Link
-https://scottgall.github.io/starWarsRPG/
